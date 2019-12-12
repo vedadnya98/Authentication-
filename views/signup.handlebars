@@ -1,0 +1,48 @@
+<title>{{title}}</title>
+<center>
+    <div class="section"></div>
+    <main>
+    <div class="section"></div>
+    <div class="logo">
+        <img src="/Users/vedadnya_98/Desktop/Web Programming HW/Web 1 Project/media/logo.png" alt="" class="circle responsive-img valign profile-image-login">
+    </div>
+    <h5 class="indigo-text">Signup to Play!</h5>
+    <div class="section"></div>
+          
+    <div class="container">
+        <div class="z-depth-1 grey lighten-4 row" style="display: inline-block; padding: 32px 48px 0px 48px; border: 1px solid #EEE;">
+                <div class="row">
+                  <label class="error">{{error}}</label>
+                        <form class="col s12" method="POST" id="login_form" action="/signup">
+                          <div class="row">
+                            <div class="input-field col s6">
+                              <input id="first_name" type="text" name="first_name" class="validate">
+                              <label for="first_name">First Name</label>
+                            </div>
+                            <div class="input-field col s6">
+                              <input id="last_name" name="last_name" type="text" class="validate">
+                              <label for="last_name">Last Name</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="password" type="password" name="password" class="validate" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Your password must contain at least one numeric and one uppercase and lowercase letter, and at least 8 or more characters" onchange="cnf_pass_check()" required>
+                              <label for="password">Password</label>
+                            </div>
+                          </div>
+                          <div class="row">
+                            <div class="input-field col s12">
+                              <input id="email" type="email" name="email" class="validate">
+                              <label for="email">Email</label>
+                            </div>
+                          </div>
+                        <div class='row'>
+                                <button type='submit' id='btn_login' class='col s12 btn btn-large waves-effect indigo'>Signup</button>
+                        </div>
+                        </form>
+                      </div>
+        </div> 
+    </div>
+    <a href="login">Already have an account , Login here</a>
+    </main>       
+    </center>
